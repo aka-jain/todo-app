@@ -1,0 +1,150 @@
+@font-face {
+    font-family: geo;
+    src: url(../fonts/Geometos.ttf)
+}
+@font-face {
+    font-family: mons-reg;
+    src: url(../fonts/Montserrat-Regular.otf)
+}
+@font-face {
+    font-family: mons-lig;
+    src: url(../fonts/Montserrat-Light.otf)
+}
+::-webkit-scrollbar {
+    width: 0
+}
+::-webkit-scrollbar-track {
+    border-radius: 0;
+    width: 0;
+    background-color: #000
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: red
+}
+body{
+	background: #f9f9f9;
+}
+h1,h2,h3,h4{
+	font-family: 'Geo';
+}
+header{
+	display: block;
+	position: fixed;
+	z-index: 1;
+	background: #4161C0;
+	padding:18px 30px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-family: 'Geo';
+}
+.container{
+	display: block;
+	padding-top: 70px;
+
+}
+.add-box{
+	display: block;
+	padding:10px 20px;
+	color: #4d4d4d;
+	background: #fff;
+	width: 80%;
+	box-shadow: 2px 2px 4px #9d9d9d;
+
+}
+.todo-head,.done-head{
+	font-family: 'Geo';
+	font-size: 1.2em;
+	color: #9d9d9d;
+	padding: 10px 30px;
+	text-align: center;
+}
+
+input{
+	border: 0px;
+	border-bottom: 1px solid #252525;
+	outline: none;
+	background: rgba(0,0,0,0);
+	width: 70%;
+	margin-left: 20px;
+	padding: 5px;
+
+}
+.todo-head i{
+	margin-left: -18px;
+	color: #252525;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+.todo-head ul,
+.done-head ul{
+	margin-top: 25px !important;
+	display: block;
+	width: 60%;
+	text-align: center;
+	box-shadow: 2px 2px 4px #9d9d9d;
+	border-radius: 2px;
+
+	margin: auto;
+
+
+}
+.todo-head ul li,
+.done-head ul li{
+	word-wrap:break-word;
+	width: 100%;
+	display: inline-block;
+	height: auto;
+	padding: 20px;
+	text-align: left;
+	background: #fff;
+	font-family: 'mons-lig';
+	font-size: 0.9em;
+	position: relative;
+	cursor:grab;
+
+}
+.error{
+	margin-top: 40px;
+	font-size: .9em;
+}
+.color-diff{
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 5px;
+	height: 98%;
+
+}
+.todo-head ul li i,
+.done-head ul li i{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #4d4d4d;
+	opacity: 0;
+	transition:all 0.1s ease-in-out;	
+}
+.todo-head ul li:hover i,
+.done-head ul li:hover i{
+	opacity: 1;
+}
+.drop-head ul{
+	width: 90%;
+	height: 100px;
+	background: #000;
+
+}
+.drop-head ul li{
+	width: 100%;}
+	.drop-head ul{
+		
+	box-shadow: 2px 2px 4px #9d9d9d;
+}
+#div{
+	min-height:100vh;
+	box-shadow: 0px 0px 0px #000;
+}
